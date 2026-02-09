@@ -33,6 +33,13 @@
   justify-content: center;
 }
 
+.no-hint {
+  margin-top: 12px;
+  font-size: 18px;
+  text-align: center;
+  color: #a0003a;
+}
+
 .btn {
   border-radius: 999px;
   border: none;
@@ -66,4 +73,20 @@
   font-size: clamp(28px, 6vw, 56px);
   color: #a0003a;
 }
+
+/* decorative floating hearts */
+.heart {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.22;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.heart.h1 { top: 6%; left: 5%; font-size: clamp(28px, 4vw, 56px); }
+.heart.h2 { top: 12%; right: 8%; font-size: clamp(24px, 3.6vw, 44px); }
+.heart.h3 { bottom: 14%; left: 10%; font-size: clamp(24px, 3.8vw, 48px); }
+.heart.h4 { bottom: 10%; right: 6%; font-size: clamp(28px, 4.2vw, 52px); }
+.heart.h5 { top: 24%; left: 14%; font-size: clamp(20px, 3vw, 40px); }
+.heart.h6 { bottom: 22%; right: 14%; font-size: clamp(20px, 3vw, 40px); }
 
